@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путешествия</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* 🔥 Hover-эффект для карточек городов */
+      .city-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+      }
+
+      .city-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(0.9);
+      }
+
+      .city-card div {
+        transition: background 0.4s ease;
+      }
+
+      .city-card:hover div {
+        background: rgba(0, 0, 0, 0.55);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-black flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="flex items-center justify-center py-4 border-b border-gray-200">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-bold">Куда отправиться в отпуск?</span>
+        <span class="text-2xl">🌍</span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center justify-center text-center px-6 py-10">
+      <h1 class="text-3xl font-bold mb-4">Планируйте свои поездки легко</h1>
+      <p class="text-gray-600 mb-8">
+        Отели, билеты и туры — всё в одном месте. Просто, быстро и удобно.
+      </p>
+
+      <!-- 🔗 ЗАМЕНИ ССЫЛКУ НИЖЕ НА СВОЁ ГЛАВНОЕ ИЗОБРАЖЕНИЕ -->
+      <img
+        src=""
+        alt=""
+        class="rounded-2xl shadow-md mb-10 max-w-full object-cover"
+      />
+
+      <!-- Popular Destinations -->
+      <section class="w-full">
+        <h2 class="text-xl font-semibold mb-4 text-left">Популярные направления</h2>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          
+          <!-- 🏙️ Город 1 -->
+          <a
+            href="https://yandex.tpk.mx/KRRL7LtS"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://avatars.mds.yandex.net/get-altay/13916077/2a00000194b1a94b2962f91c933d174ce1d8/orig"
+              alt="Москва"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Москва
+            </div>
+          </a>
+
+          <!-- 🌴 Город 2 -->
+          <a
+            href="https://yandex.tpk.mx/dB1ghpVf"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://avatars.mds.yandex.net/get-altay/1453927/2a000001694e1412ad2c4652aafb10d9b1e4/XXL_height"
+              alt="Сочи"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Сочи
+            </div>
+          </a>
+
+          <!-- 🌆 Город 3 -->
+          <a
+            href="https://yandex.tpk.mx/VN5Di8p2"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://avatars.mds.yandex.net/i?id=e4a17781ee1a7d5a7aea3de7966df1bb_l-4835198-images-thumbs&n=13"
+              alt="Санкт-Петербург"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Санкт-Петербург
+            </div>
+          </a>
+
+          <!-- 🕌 Город 4 -->
+          <a
+            href="https://yandex.tpk.mx/nYIzlqVx"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://avatars.mds.yandex.net/i?id=0812b74f9be3e31a6558c97fce694b96_l-5398121-images-thumbs&n=13"
+              alt="Казань"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Казань
+            </div>
+          </a>
+
+          <!-- 🏙️ Город 5 -->
+          <a
+            href="https://yandex.tpk.mx/Xrv9bkhg"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://wallpapers.com/images/hd/china-neon-city-skyscraper-lights-w2l9khmjvdbzdaq4.jpg"
+              alt="Китай"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Китай
+            </div>
+          </a>
+
+          <!-- 🏔️ Город 6 -->
+          <a
+            href="https://yandex.tpk.mx/oIUlZcaw"
+            target="_blank"
+            class="city-card relative rounded-2xl overflow-hidden shadow-md block"
+          >
+            <img
+              src="https://www.travel4less.us/wp-content/uploads/2019/10/Parigi-Roma-Barcelona-2.jpg"
+              alt="Европа"
+              class="object-cover w-full h-28"
+            />
+            <div class="absolute bottom-0 left-0 bg-black/40 text-white text-sm px-3 py-1 w-full">
+              Европа
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <div class="mt-10">
+        <a
+          href="https://yandex.tpk.mx/8s7YknGs"
+          target="_blank"
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-xl shadow-md transition"
+        >
+          Посмотреть все варианты
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-gray-500 py-6 border-t border-gray-100">
+      Приятного путешествия.
+    </footer>
+  </body>
+</html>
