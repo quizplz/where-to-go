@@ -27,10 +27,15 @@
       .city-card:hover div {
         background: rgba(0, 0, 0, 0.55);
       }
+
+      /* Убираем возможный нижний отступ, чтобы кнопка не перекрывала футер */
+      main {
+        padding-bottom: 90px;
+      }
     </style>
   </head>
 
-  <body class="bg-white text-black flex flex-col min-h-screen">
+  <body class="bg-white text-black flex flex-col min-h-screen relative">
     <!-- Header -->
     <header class="flex items-center justify-center py-4 border-b border-gray-200">
       <div class="flex items-center space-x-2">
@@ -48,8 +53,8 @@
 
       <!-- 🔗 ЗАМЕНИ ССЫЛКУ НИЖЕ НА СВОЁ ГЛАВНОЕ ИЗОБРАЖЕНИЕ -->
       <img
-        src=""
-        alt=""
+        src="ВАША_ССЫЛКА_НА_ГЛАВНОЕ_ИЗОБРАЖЕНИЕ"
+        alt="Путешествия"
         class="rounded-2xl shadow-md mb-10 max-w-full object-cover"
       />
 
@@ -155,22 +160,24 @@
           </a>
         </div>
       </section>
-
-      <!-- CTA -->
-      <div class="mt-10">
-        <a
-          href="https://yandex.tpk.mx/8s7YknGs"
-          target="_blank"
-          class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-xl shadow-md transition"
-        >
-          Посмотреть все варианты
-        </a>
-      </div>
     </main>
+
+    <!-- 📱 Фиксированная кнопка CTA -->
+<div
+  class="fixed bottom-4 left-0 right-0 z-50 px-4"
+>
+  <a
+    href="https://yandex.tpk.mx/8s7YknGs"
+    target="_blank"
+    class="block w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-4 rounded-xl shadow-md transition text-center text-base leading-none"
+  >
+    Посмотреть все варианты
+  </a>
+</div>
 
     <!-- Footer -->
     <footer class="text-center text-xs text-gray-500 py-6 border-t border-gray-100">
-      Приятного путешествия.
+      Приятного путешествия!
     </footer>
   </body>
 </html>
